@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <RelativeLayout
+        android:id="@+id/rlayout_lifelines"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/life_story_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_life_lines"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/life_story_helper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/life_story_text"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="2dp"
+            android:text="@string/settings_life_lines_help" />
+
+        <Switch
+            android:id="@+id/life_story_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/life_story_helper"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:checked="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlayout_familylines"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlayout_lifelines"
+        android:layout_marginTop="18dp">
+        <TextView
+            android:id="@+id/family_tree_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_family_tree_lines"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/family_tree_helper_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/family_tree_text"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="2dp"
+            android:text="@string/settings_family_tree_lines_help" />
+
+        <Switch
+            android:id="@+id/family_tree_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/family_tree_helper_text"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:checked="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlayout_spouselines"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlayout_familylines"
+        android:layout_marginTop="18dp">
+        <TextView
+            android:id="@+id/spouse_lines_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_spouse_lines"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/spouse_lines_helper_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spouse_lines_text"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="2dp"
+            android:text="@string/settings_spouse_lines_help" />
+
+        <Switch
+            android:id="@+id/spouse_lines_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/spouse_lines_helper_text"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:checked="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlayout_father_side"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlayout_spouselines"
+        android:layout_marginTop="18dp">
+        <TextView
+            android:id="@+id/father_side_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_father_side_lines"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/father_side_helper_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/father_side_text"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="2dp"
+            android:text="@string/settings_father_side_help" />
+
+        <Switch
+            android:id="@+id/father_side_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/father_side_helper_text"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:checked="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlayout_mother_side"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlayout_father_side"
+        android:layout_marginTop="18dp">
+        <TextView
+            android:id="@+id/mother_side_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_mother_side_lines"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/mother_side_helper_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mother_side_text"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="2dp"
+            android:text="@string/settings_mother_side_help" />
+
+        <Switch
+            android:id="@+id/mother_side_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/mother_side_helper_text"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:checked="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlayout_male_events"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlayout_mother_side"
+        android:layout_marginTop="18dp">
+        <TextView
+            android:id="@+id/male_event_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_male_events_lines"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/male_event_helper_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/male_event_text"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="2dp"
+            android:text="@string/settings_male_events_help" />
+
+        <Switch
+            android:id="@+id/male_event_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/male_event_helper_text"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:checked="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlayout_female_events"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlayout_male_events"
+        android:layout_marginTop="18dp">
+        <TextView
+            android:id="@+id/female_event_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_female_events_lines"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/female_event_helper_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/female_event_text"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="2dp"
+            android:text="@string/settings_female_events_help" />
+
+        <Switch
+            android:id="@+id/female_event_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/female_event_helper_text"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:checked="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlayout_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlayout_female_events"
+        android:layout_marginTop="18dp">
+        <TextView
+            android:id="@+id/logout_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_logout_lines"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/logout_helper_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logout_text"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="2dp"
+            android:text="@string/settings_logout_help" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
